@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>Blog Raigad Fort</title>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <title>RaigadFort</title>
+    </head>
+
+    <body>
+
+       
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <h3 class="float-md-start mb-0 text-white"><img src="logo.png" alt="" style="width: 120px;
+                    margin-left: 8px;"></h3>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="blog.html">Blog</a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Inquire through whatsapp
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item"
+                                    href="https://api.whatsapp.com/send?phone=+918208142141&amp;text=Hello! I would like to enquiry about a product on e-Sportz.com">Contact
+                                    to Prathmesh</a>
+                                <a class="dropdown-item"
+                                    href="https://api.whatsapp.com/send?phone=+919607167293&amp;text=Hello! I would like to enquiry about a product on e-Sportz.com">Contact
+                                    to Pruthviraj</a>
+                                <a class="dropdown-item"
+                                    href="https://api.whatsapp.com/send?phone=+918847766540&amp;text=Hello! I would like to enquiry about a product on e-Sportz.com">Contact
+                                    to Vishal</a>
+                                <a class="dropdown-item"
+                                    href="https://api.whatsapp.com/send?phone=+918847766540&amp;text=Hello! I would like to enquiry about a product on e-Sportz.com">Contact
+                                    to Chaitanya</a>
+                            </div>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link " href="help.html">Help</a>
+                        </li> -->
+                    </ul>
+                    <form class="d-flex">
+                        <div class="container my-1">
+                            <div class="row">
+                                <div class="col-lg-6 d-flex justify-content-start justify-content-lg-end">
+                                    <button class="btn btn-outline-danger mx-1" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#loginModal">Log In</button>
+                                    <button class="btn btn-outline-danger mx-1" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#signupModal">Sign Up</button>
+                                </div>
+                                <div class="col-lg-6 d-flex justify-content-start justify-content-lg-end">
+                                    <div class="row my-2 my-lg-0">
+                                        <div class="col-8">
+                                            <input class="form-control me-2" type="search" placeholder="Search"
+                                                aria-label="Search">
+                                        </div>
+                                        <div class="col-4">
+                                            <button class="btn btn-outline-danger" type="submit">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Log In to your account</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Save Password</label>
+                            </div>
+                            <button type="submit" class="btn btn-info">Log In</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Create a new account</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Username</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn btn-info">Sign Up</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Log In to your account</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Save Password</label>
+                            </div>
+                            <button type="submit" class="btn btn-info">Log In</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card bg-dark text-white">
+            <img src="fort2.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay" style="text-align: center; margin-top: 120px;">
+                <h2 class="card-title">Raigad Information</h2>
+                <h4 class="card-text" style="margin-top: 80px;">"Fort Raigad is much more than a mere tourist spot. It
+                    is a sacred place of pilgrimage, which has left an imprint of the grand vision of Hindavi Swarajya
+                    as cherished by Chhatrapati Shivaji Maharaj.“ When Shivaji Maharaj first saw the place, he could not
+                    help exclaim:
+
+                    “This Fort is formidable. All sides appear as if chiselled from a mountain of solid rock. Not even a
+                    blade of grass grows on the sheer vertical rock. This is a paragon to house the throne.”</h4>
+                <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="card mb-3">
+            <h5 class="card-title text-center" style="margin: 20px;">Raigad Fort: A Guide For First Time Visitors</h5>
+            <img src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2020/01/Raigad1.jpg" class="card-img-top"
+                alt="..." style="margin: 12px 0 12px 0;
+            padding: 40px; height: 560px;">
+            <div class="card-body">
+                <!-- <h5 class="card-title">Raigad Fort: A Guide For First Time Visitors</h5> -->
+                <p class="card-text">Known as the “Gibraltar of the East” by the Europeans, the Raigad Fort is a
+                    majestic and aesthetically appealing hill fort in the district of Raigad, Maharashtra. Located 820
+                    meters above sea level in the Sahyadri mountain range, the fort can be accessed by a single pathway
+                    comprising of 1737 steps. Its strategic build speaks of the clever architecture and design used
+                    centuries ago. Surrounded by deep green valleys, the fort has several gateways that enthrall its
+                    visitors, namely, the Mena Darwaja, Nagarkhana Darwaja, Palkhi Darwaja, and the majestic Maha
+                    Darwaja which is the main entrance to the imperial structure. Today, the fort serves as a living
+                    reminder of the glory and valor of the Marathas.</p>
+                <!-- <p class="card-text"><small class="text-muted">Last Update</small></p> -->
+                <button class="btn btn-danger">Learn More</button>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <h5 class="card-title text-center" style="margin: 20px;">Raigad Fort Today – A Complete Guide for First-Time
+                Visitors</h5>
+            <img src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2020/01/Raigad5-768x512.jpg"
+                class="card-img-top" alt="..." style="margin: 12px 0 12px 0;
+            padding: 40px; height: 560px;">
+            <div class="card-body">
+                <!-- <h5 class="card-title">Raigad Fort: A Guide For First Time Visitors</h5> -->
+                <p class="card-text">Despite being in ruins at present, the fort still entails a majestic ambience that
+                    will make you feel its grandness and splendor dating back to 1030 AD.
+
+                <h6> Entering the Fort</h6>
+                The Chit Darwaja is located at the foothills of the fort near the village of Pachad. It is from here
+                that visitors start on their foot journey to the Khoob Ladha Buruj, and then to the Maha Darwaja, the
+                main entrance to the fort. Built centuries ago, the massive entrance to the fort reflects the pride and
+                glory of the Marathas. If you find the climb of 1737 steps too demanding, you can also avail ropeway
+                facilities that will take you directly to the top of the fort near Mena Darwaja leading to the Rani
+                Vasa. You can also find the office complex of the king’s secretaries towards the right of the Mena
+                Darwaja.
+
+                <h6>Exploring the fort
+                    Rani Vasa</h6>
+                If you are visiting the fort for the first time, do not miss exploring the chambers of the queen or the
+                Rani Vasa that comprises of six chambers each with attached restrooms. These chambers were used by the
+                mother of Shiv Chhatrapati along with the other royal ladies and are some of the only structures
+                standing intact.
+
+                <h6>Palkhi Darwaja</h6>
+                Just in front of the queen chambers is the Palkhi Darwaja that served as a special doorway for Shivaji
+                Maharaj’s convoy. To the right of this doorway are three dark chambers that are believed to be the
+                granaries of the fort by historians.
+
+                <h6>Raj Bhavan</h6>
+                The main palace of Shivaji, Raj Bhavan, was made out of wood; however, it is only the bases of the
+                pillars that remain. Home to the royal Marathas, the Raj Bhavan has witnessed victories, anger, joys and
+                sorrows along with Shivaji Chhatrapati’s overwhelming generosity.
+
+                <h6>Raj Sabha</h6>
+                The Raj Bhavan leads to a massive, sprawling lawn also known as the Raj Sabha. This open ground has
+                witnessed various important events of the Maratha rule. From the splendor of battle wins to the
+                coronation of Shiv Chhtrapati, the Raj Sabha has seen it all. This is also where Shivaji Maharaj broke
+                the shackles of slavery that lasted for over 300 years and established Hindavi Swarajya. The king’s
+                throne was a magnificent masterpiece studded with precious jewels such as diamonds and pearls and rested
+                on a column of 1000 kilograms of pure gold.
+
+                <h6> The Royal Bath</h6>
+                The impressive drainage system of the Royal Bath speaks for the architectural excellence prevalent
+                centuries ago. You will be amazed to know that it leads to an underground cellar that was used for
+                secretive activities back in the day such as worshipping Bhavani Mata, storing loot from wars, secret
+                dialogues and what not!
+
+                <h6>The watchtowers</h6>
+                The fort is also home to the remains of three watchtowers that once guarded this enormous structure. Two
+                of the three towers still remain while the British attack destroyed the third.
+
+                <h6>Holi Cha Mal</h6>
+                Take a walk at the Holi Cha Mal just outside the Nagarkhana Darwaja during your first visit to Raigad
+                Fort. This massive open ground was used by the people of the fort to celebrate Holi in early days.
+                Today, it is an excellent spot to explore with your family and friends. The Bara Tanki comprised of more
+                than a dozen water reservoirs and its ruins will amaze you by their magnificent structure.
+
+                <h6>Hirakani Buruj</h6>
+                The Hirakani Buruj is a famous wall in the premises of Raigad fort that stands strong even today.
+                Constructed over a high cliff, this wall has an interesting story attached to it. According to local
+                folklore, a woman named Hirakani belonging to a nearby village had come to Raigad to sell milk at the
+                fort. However, she was trapped inside the fort when the gates of the wall were locked after sunset.
+                Hearing the echoes of her little son crying from the adjacent village, an anxious Hirkani couldn’t wait
+                for the gates to reopen the next morning and courageously climbed the steep cliff during the pitch dark
+                hours of the night. Shivaji was amazed to hear this feat and built the Hirakani Buruj in appreciation of
+                her bravery.
+
+                <h6>Takmak Tok</h6>
+                The Takmak Tok is a massive rock cliff located at a height of 1200 feet. The breathtaking view of the
+                enchanting valleys of Sahyadri hills make it a popular tourist spot of Raigad. According to local
+                legends, the Takmak Tok used to be a punishment point where wrongdoers were pushed off to death. It is
+                also believed that Shivaji Maharaj punished a number of enemies and traitors by sending them hurtling
+                down this valley. </p>
+                <!-- <p class="card-text"><small class="text-muted">Last Update</small></p> -->
+                <button class="btn btn-success">Learn More</button>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <h5 class="card-title text-center" style="margin: 20px;">Places to Explore Nearby Raigad Fort</h5>
+            <img src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2020/01/Raigad3-768x512.jpg"
+                class="card-img-top" alt="..." style="margin: 12px 0 12px 0;
+            padding: 40px; height: 560px;">
+            <div class="card-body">
+                <!-- <h5 class="card-title">Raigad Fort: A Guide For First Time Visitors</h5> -->
+                <p class="card-text">
+                <h6>The Jagadishwar Temple</h6>
+                A strong believer in Hinduism, Shivaji Maharaj built the Jagadishwar temple as an act of devotion to
+                Lord Jagadishwar. Located 25 km away from Mahad, it is believed that Shivaji used to visit the temple
+                everyday. If you are looking for a serene, spiritual retreat, explore the temple grounds that house
+                idols of Jagadishwar and Nandi.
+
+                <h6>The Gangasagar Lake</h6>
+                Located in Pachad, the Gangasagar Lake is a massive artificial lake that is believed to be built during
+                the coronation of Shivaji Maharaj. A major tourist spot, the lake lies in front of the fort against a
+                scenic backdrop of snow clad peaks. Visit the lake if you are looking for a quiet getaway amidst nature.
+
+                <h6>The Jijamata Palace</h6>
+                Explore the Jijamata Palace and pay your respects to the lady behind the success and greatness of
+                Shivaji Maharaj. Dedicated to the mother of the great ruler, this palace is a must visit if you want to
+                dig deep into history and unravel tales of the Maratha empire. Mostly destroyed by the British Army, the
+                palace is now protected by the Archaeological Survey of India (ASI).
+
+                <h6>Raigad Museum</h6>
+                If you are a history buff, visit the Raigad Museum situated on the lower floors of Raigad Fort to peruse
+                paintings, artefacts, weapons etc used during the time of Maratha rule for a trip to the glorious past.
+
+                <h6>Tickle Your Taste Buds at Raigad</h6>
+                While you are at Raigad, make sure to eat like the Marathas! The food here is majorly influenced by
+                Maharashtrian cuisine with a subtle blend of North and South Indian cuisine as well. Keep a few candies
+                handy for the locals of the place are proud of their spicy curries. Do try out Misal, a spicy gravy dish
+                made of potatoes and other vegetables that will keep you wanting more.
+
+                <h6>Festivals of the Region</h6>
+                Much like the rest of the country, the people of Raigad celebrate festivals such as Holi, Dussehra,
+                Diwali etc with great pomp and show.</p>
+                <!-- <p class="card-text"><small class="text-muted">Last Update</small></p> -->
+                <button class="btn btn-primary">Learn More</button>
+            </div>
+        </div>
+
+
+
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title text-center" style="margin: 20px;">Best Time to Visit Raigad</h5>
+                <img src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2020/01/Raigad-768x512.jpg"
+                    class="card-img-top" alt="..." style="margin: 12px 0 12px 0;
+              padding: 40px; height: 560px;">
+                <p class="card-text">The best months to visit Raigad Fort are from November to March, with pleasant
+                    winter weather making it ideal for tourists. Activities like ropeway or trekking are top things to
+                    do during winters. Summers are on the hotter side with peak temperatures reaching 50 degrees
+                    Celsius. There is less influx of tourists between March to June because of the heat.
+
+                <h4> How to Reach Raigad</h4>
+                By Air: There are no direct flights available to Raigad Fort. Incase you wish to fly by air, the nearest
+                airport will be Chatrapati Shivaji Airport in Mumbai or Pune International Airport
+
+                By Rail: If you are taking a train, the closest railway station to the fort is Mangaon. Trains from
+                popular cities like Mumbai, New Delhi, Bangalore, Chennai and Mysore connect to this station.
+
+                By Road: The closest place to Raigad Fort by road is Pachad Village. Once at the village you can either
+                choose to trek up approximately 1700 steps to the fort or use an alternate method of commute like the
+                Raigad Ropeway. The tramway is aerial and will help you reach the destination in under 4 minutes.</p>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                <button class="btn btn-secondary">Learn More</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <p>
+            <h5>Mobile Phones and Cameras</h5>
+            You will have to pay a minimal fee at the ticketing gate to carry your mobile phone, camera or video camera
+            inside Raigad Fort.
+
+            <h5>Final Thoughts</h5>
+            A place of rich historical significance, the Raigad Fort is rich in enchanting structures and a deep rooted
+            history that allures visitors of all ages. It reflects the sheer bravery and courage of the Maratha rulers
+            and still stands tall with pride. Visit Raigad today and experience the authentic and rich cultural heritage
+            of the place.</p>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- <div class="row blog-list" style="margin-top: 32px;">
+            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp masonry-item">
+                <div id="post-5481"
+                    class="post-5481 post type-post status-publish format-standard has-post-thumbnail hentry category-forts-of-maharashtra tag-mahimangad-fort">
+                    <div class="blog-post">
+                        <a href="https://www.treksandtrails.org/blog/mahimangad-fort-trek-near-satara/">
+                            <div class="item-img-wrap">
+                                <img width="768" height="512"
+                                    src="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Mahimangad-Fort-768x512.jpg"
+                                    class="img-responsive wp-post-image" alt="Mahimangad Fort Trek near Satara"
+                                    loading="lazy"
+                                    srcset="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Mahimangad-Fort-768x512.jpg 768w, https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Mahimangad-Fort-272x182.jpg 272w"
+                                    sizes="(max-width: 768px) 100vw, 768px">
+                                <div class="item-img-overlay">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </a>
+                       
+                        <h1><a href="https://www.treksandtrails.org/blog/mahimangad-fort-trek-near-satara/">Mahimangad
+                                Fort Trek near Satara</a></h1>
+                        <p>One of the finest forts built in Satara District, Maharashtra, India, is Mahimangad Fort.
+                            This forts fortification is still strong and looks good. This fort is about 3200 feet above
+                            sea level. The trail of the fort isn’t that difficult. The tail is easy, and</p>
+                        <p><a href="https://www.treksandtrails.org/blog/mahimangad-fort-trek-near-satara/"
+                                class="btn btn-theme-dark read-more-link"><button type="button"
+                                    class="btn btn-outline-primary">Read More</button></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp masonry-item">
+                <div id="post-5431"
+                    class="post-5431 post type-post status-publish format-standard has-post-thumbnail hentry category-forts-of-maharashtra tag-varugad-fort">
+                    <div class="blog-post">
+                        <a href="https://www.treksandtrails.org/blog/varugad-fort-trek-near-satara/">
+                            <div class="item-img-wrap">
+                                <img width="768" height="512"
+                                    src="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Varugad-Fort-768x512.jpg"
+                                    class="img-responsive wp-post-image" alt="Varugad Fort Trek near Satara"
+                                    loading="lazy"
+                                    srcset="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Varugad-Fort-768x512.jpg 768w, https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Varugad-Fort-272x182.jpg 272w"
+                                    sizes="(max-width: 768px) 100vw, 768px">
+                                <div class="item-img-overlay">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <h1><a href="https://www.treksandtrails.org/blog/varugad-fort-trek-near-satara/">Varugad Fort
+                                Trek near Satara</a></h1>
+                        <p>Varugad Fort, an old but strong citadel with all the fortification, stands still and makes us
+                            know its history. Varugad Fort is located in Satara District, Maharashtra, India. It is
+                            about 3000 feet above sea level, an easy grade one-day fort trek in Satara District.</p>
+                        <p><a href="https://www.treksandtrails.org/blog/varugad-fort-trek-near-satara/"
+                                class="btn btn-theme-dark read-more-link"><button type="button"
+                                    class="btn btn-outline-primary">Read More</button></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp masonry-item">
+                <div id="post-5358"
+                    class="post-5358 post type-post status-publish format-standard has-post-thumbnail hentry category-forts-of-maharashtra tag-sajjangad">
+                    <div class="blog-post">
+                        <a href="https://www.treksandtrails.org/blog/sajjangad-fort-trek-near-satara/">
+                            <div class="item-img-wrap">
+                                <img width="768" height="512"
+                                    src="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Sajjangad-Fort-768x512.jpg"
+                                    class="img-responsive wp-post-image" alt="Sajjangad Fort Trek near Satara"
+                                    loading="lazy"
+                                    srcset="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Sajjangad-Fort-768x512.jpg 768w, https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Sajjangad-Fort-272x182.jpg 272w"
+                                    sizes="(max-width: 768px) 100vw, 768px">
+                                <div class="item-img-overlay">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </a>
+                       
+                        <h1><a href="https://www.treksandtrails.org/blog/sajjangad-fort-trek-near-satara/">Sajjangad
+                                Fort Trek near Satara</a></h1>
+                        <p>Sajjangad Fort, which is situated in Satara District, Maharashtra, India. The Fort’s name
+                            defines, “Sajjan” means Good people and gad means Fort in Marathi. The Fort is about 3350
+                            feet above sea level. Sajjangad Fort Hike starting point Parali, Satara District. Sajjangad
+                            Fort Trek gradient</p>
+                        <p><a href="https://www.treksandtrails.org/blog/sajjangad-fort-trek-near-satara/"
+                                class="btn btn-theme-dark read-more-link"><button type="button"
+                                    class="btn btn-outline-primary">Read More</button></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp masonry-item">
+                <div id="post-5332"
+                    class="post-5332 post type-post status-publish format-standard has-post-thumbnail hentry category-forts-of-maharashtra tag-jarandeshwar">
+                    <div class="blog-post">
+                        <a href="https://www.treksandtrails.org/blog/jarandeshwar-trek-near-satara/">
+                            <div class="item-img-wrap">
+                                <img width="768" height="512"
+                                    src="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Jarandeshwar-768x512.jpg"
+                                    class="img-responsive wp-post-image" alt="Jarandeshwar Trek near Satara"
+                                    loading="lazy"
+                                    srcset="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Jarandeshwar-768x512.jpg 768w, https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Jarandeshwar-272x182.jpg 272w"
+                                    sizes="(max-width: 768px) 100vw, 768px">
+                                <div class="item-img-overlay">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <h1><a href="https://www.treksandtrails.org/blog/jarandeshwar-trek-near-satara/">Jarandeshwar
+                                Trek near Satara</a></h1>
+                        <p>Jarandeshwar mountain is situated in Satara District, Maharashtra, India. Jarandeshwar is
+                            about 3000 feet above sea level. Jarandeshwar trail is famous for “Jarandeshwar Temple”, and
+                            because of this temple, the mountain on which the temple situated known as Jarandeshwar
+                            mountain. The temple is located on</p>
+                        <p><a href="https://www.treksandtrails.org/blog/jarandeshwar-trek-near-satara/"
+                                class="btn btn-theme-dark read-more-link"><button type="button"
+                                    class="btn btn-outline-primary">Read More</button></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp masonry-item">
+                <div id="post-5328"
+                    class="post-5328 post type-post status-publish format-standard has-post-thumbnail hentry category-forts-of-maharashtra tag-ajinkyatara-fort">
+                    <div class="blog-post">
+                        <a href="https://www.treksandtrails.org/blog/ajinkyatara-fort-trek-near-satara/">
+                            <div class="item-img-wrap">
+                                <img width="768" height="512"
+                                    src="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Ajinkyatara-Fort-Trek-768x512.jpg"
+                                    class="img-responsive wp-post-image" alt="Ajinkyatara Fort Trek near Satara"
+                                    loading="lazy"
+                                    srcset="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Ajinkyatara-Fort-Trek-768x512.jpg 768w, https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Ajinkyatara-Fort-Trek-300x200.jpg 300w, https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Ajinkyatara-Fort-Trek-1024x682.jpg 1024w, https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Ajinkyatara-Fort-Trek-1536x1023.jpg 1536w, https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Ajinkyatara-Fort-Trek-272x182.jpg 272w, https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Ajinkyatara-Fort-Trek.jpg 1621w"
+                                    sizes="(max-width: 768px) 100vw, 768px">
+                                <div class="item-img-overlay">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <h1><a href="https://www.treksandtrails.org/blog/ajinkyatara-fort-trek-near-satara/">Ajinkyatara
+                                Fort Trek near Satara</a></h1>
+                        <p>Ajinkyatara Fort is located in Satara District, Maharashtra, India. The fort is about 3300
+                            feet above sea level, and The fort is an easy grade level trek. This fort is one of the most
+                            important Forts in Satara. Ajinkyatara Killa is also known as the</p>
+                        <p><a href="https://www.treksandtrails.org/blog/ajinkyatara-fort-trek-near-satara/"
+                                class="btn btn-theme-dark read-more-link"><button type="button"
+                                    class="btn btn-outline-primary">Read More</button></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp masonry-item">
+                <div id="post-5319"
+                    class="post-5319 post type-post status-publish format-standard has-post-thumbnail hentry category-forts-of-maharashtra tag-santoshgad-fort">
+                    <div class="blog-post">
+                        <a href="https://www.treksandtrails.org/blog/santoshgad-fort-trek-near-satara/">
+                            <div class="item-img-wrap">
+                                <img width="768" height="512"
+                                    src="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Santoshgad-Fort-768x512.jpg"
+                                    class="img-responsive wp-post-image" alt="Santoshgad Fort Trek near Satara"
+                                    loading="lazy"
+                                    srcset="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Santoshgad-Fort-768x512.jpg 768w, https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Santoshgad-Fort-272x182.jpg 272w"
+                                    sizes="(max-width: 768px) 100vw, 768px">
+                                <div class="item-img-overlay">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <h1><a href="https://www.treksandtrails.org/blog/santoshgad-fort-trek-near-satara/">Santoshgad
+                                Fort Trek near Satara</a></h1>
+                        <p>Santoshgad Fort is also locally known as Fort of Tathavade, which the nearest village to the
+                            Fort. The Fort is about 2900 feet above sea level. It is located in Phaltan Taluka, Satara
+                            District, Maharashtra, India.&nbsp; Starting Point:&nbsp;Tathavade, Phaltan Taluka, Satara
+                            District.&nbsp; Trek Gradient: It</p>
+                        <p><a href="https://www.treksandtrails.org/blog/santoshgad-fort-trek-near-satara/"
+                                class="btn btn-theme-dark read-more-link"><button type="button"
+                                    class="btn btn-outline-primary">Read More</button></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp masonry-item">
+                <div id="post-5306"
+                    class="post-5306 post type-post status-publish format-standard has-post-thumbnail hentry category-forts-of-maharashtra tag-vardhangad-fort">
+                    <div class="blog-post">
+                        <a href="https://www.treksandtrails.org/blog/vardhangad-fort-trek-near-satara/">
+                            <div class="item-img-wrap">
+                                <img width="768" height="512"
+                                    src="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Vardhangad-Fort-Trek-768x512.jpg"
+                                    class="img-responsive wp-post-image" alt="Vardhangad Fort Trek near Satara"
+                                    loading="lazy"
+                                    srcset="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Vardhangad-Fort-Trek-768x512.jpg 768w, https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Vardhangad-Fort-Trek-272x182.jpg 272w"
+                                    sizes="(max-width: 768px) 100vw, 768px">
+                                <div class="item-img-overlay">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <h1><a href="https://www.treksandtrails.org/blog/vardhangad-fort-trek-near-satara/">Vardhangad
+                                Fort Trek near Satara</a></h1>
+                        <p>Vardhangad Fort is in Satara District, Maharashtra, India. The fort is about 1500 feet
+                            elevated from the sea level. Vardhangad fort is one of the defenses where Chhatrapati
+                            Shivaji Maharaj had resided. The temple of Goddess Vardhanimata on the fort is very famous,
+                            and it</p>
+                        <p><a href="https://www.treksandtrails.org/blog/vardhangad-fort-trek-near-satara/"
+                                class="btn btn-theme-dark read-more-link"><button type="button"
+                                    class="btn btn-outline-primary">Read More</button></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp masonry-item">
+                <div id="post-5288"
+                    class="post-5288 post type-post status-publish format-standard has-post-thumbnail hentry category-forts-of-maharashtra tag-kalyangad-fort tag-nandgiri-fort">
+                    <div class="blog-post">
+                        <a href="https://www.treksandtrails.org/blog/kalyangad-fort-trek-near-satara/">
+                            <div class="item-img-wrap">
+                                <img width="720" height="512"
+                                    src="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Kalyangad-Fort-Trek-720x512.jpg"
+                                    class="img-responsive wp-post-image" alt="Kalyangad Fort Trek near Satara"
+                                    loading="lazy">
+                                <div class="item-img-overlay">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <h1><a href="https://www.treksandtrails.org/blog/kalyangad-fort-trek-near-satara/">Kalyangad
+                                Fort Trek near Satara</a></h1>
+                        <p>Similarly, one can experience tremendous variations served by nature. The Sahyadri Ranges is
+                            one of the best destinations to explore and enjoy nature at its best. Various landscapes,
+                            caves, forts, peaks, exclusive beauty one call; Sahyadri’s. Moving deep into Sahyadri, we
+                            explore new and new</p>
+                        <p><a href="https://www.treksandtrails.org/blog/kalyangad-fort-trek-near-satara/"
+                                class="btn btn-theme-dark read-more-link"><button type="button"
+                                    class="btn btn-outline-primary">Read More</button></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp masonry-item">
+                <div id="post-5217"
+                    class="post-5217 post type-post status-publish format-standard has-post-thumbnail hentry category-forts-of-maharashtra tag-chandan-vandan-fort-trek">
+                    <div class="blog-post">
+                        <a href="https://www.treksandtrails.org/blog/chandan-vandan-fort-trek-near-satara/">
+                            <div class="item-img-wrap">
+                                <img width="768" height="512"
+                                    src="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Chandan-Vandan-Fort-768x512.jpg"
+                                    class="img-responsive wp-post-image" alt="Chandan Vandan Fort Trek near Satara"
+                                    loading="lazy"
+                                    srcset="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Chandan-Vandan-Fort-768x512.jpg 768w, https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Chandan-Vandan-Fort-272x182.jpg 272w"
+                                    sizes="(max-width: 768px) 100vw, 768px">
+                                <div class="item-img-overlay">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <h1><a href="https://www.treksandtrails.org/blog/chandan-vandan-fort-trek-near-satara/">Chandan
+                                Vandan Fort Trek near Satara</a></h1>
+                        <p>While exploring the new hiking trails, we came across Chandan Vandan Forts in Bhuinj, Satara
+                            District, Maharashtra, India. The two forts which fall adjacent to each other are Chandan
+                            Fort and Vandan fort. These two forts are known as “Twin Forts”. Talking more about the</p>
+                        <p><a href="https://www.treksandtrails.org/blog/chandan-vandan-fort-trek-near-satara/"
+                                class="btn btn-theme-dark read-more-link"><button type="button"
+                                    class="btn btn-outline-primary">Read More</button></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp masonry-item">
+                <div id="post-5212"
+                    class="post-5212 post type-post status-publish format-standard has-post-thumbnail hentry category-forts-of-maharashtra">
+                    <div class="blog-post">
+                        <a href="https://www.treksandtrails.org/blog/vairatgad-fort-trek-near-satara/">
+                            <div class="item-img-wrap">
+                                <img width="768" height="512"
+                                    src="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Vairatgad-Fort_-2-768x512.jpg"
+                                    class="img-responsive wp-post-image" alt="Vairatgad Fort Trek near Satara"
+                                    loading="lazy"
+                                    srcset="https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Vairatgad-Fort_-2-768x512.jpg 768w, https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Vairatgad-Fort_-2-272x182.jpg 272w"
+                                    sizes="(max-width: 768px) 100vw, 768px">
+                                <div class="item-img-overlay">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <h1><a href="https://www.treksandtrails.org/blog/vairatgad-fort-trek-near-satara/">Vairatgad
+                                Fort Trek near Satara</a></h1>
+                        <p>Vairatgad Fort is one of the not known forts near Wai in Satara District, Maharashtra, India.
+                            Vairatgad is a one-day hill fort trek, which is about 3340 feet above sea level. The fort is
+                            no more a major tourist spot as most of the fort’s</p>
+                        <p><a href="https://www.treksandtrails.org/blog/vairatgad-fort-trek-near-satara/"
+                                class="btn btn-theme-dark read-more-link"><button type="button"
+                                    class="btn btn-outline-primary">Read More</button></a></p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <footer>
+            <div class="card text-center">
+                <div class="card-header">
+                    Featured
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">RaigadFort.com</h5>
+                    <a href="index.html" class="btn btn-primary my-1">Go to homepage</a>
+                    <div class="footer-copyright text-center bg-dark text-white py-2">© 2021 Copyright All rights
+                        reserved:
+                        <a href="#">RaigadFort.com</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+    </html>
